@@ -18,7 +18,6 @@ public class MyThread extends Thread {
         } catch (InterruptedException e) {}
 
         for (int i = 1; i < 4; i++) {
-            System.out.println(this.getName() + " prints " + i);
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {}

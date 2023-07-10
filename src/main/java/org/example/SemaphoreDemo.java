@@ -3,7 +3,7 @@ package org.example;
 import java.util.concurrent.Semaphore;
 
 public class SemaphoreDemo {
-    static Semaphore sem = new Semaphore(2, true);
+    static Semaphore sem = new Semaphore(3, true);
     public static void main(String[] args) throws InterruptedException {
         MyThread t0 = new MyThread(sem);
         MyThread t1 = new MyThread(sem);

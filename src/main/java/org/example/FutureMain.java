@@ -13,5 +13,7 @@ public class FutureMain {
         }
 
         System.out.println(future.get());
+        System.exit(0);
+
     }
 }

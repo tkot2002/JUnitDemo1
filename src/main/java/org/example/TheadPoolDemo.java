@@ -21,7 +21,9 @@ public class TheadPoolDemo {
             };
             exec.submit(task);
         }
-        //System.out.println(count);
+        exec.shutdown();
+        while (!exec.isTerminated()) {}
+        System.out.println("Finished all threads.");
     }
 
     public static void increment() {
